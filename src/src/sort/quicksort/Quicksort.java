@@ -2,6 +2,12 @@ package src.sort.quicksort;
 
 import java.util.Arrays;
 
+/**
+ * Simple quicksort algorithm to sort integer arrays.
+ * 
+ * @author nicomartin.enego
+ *
+ */
 public class Quicksort {
 
 	public static void main(String[] args) {
@@ -12,6 +18,13 @@ public class Quicksort {
 		System.out.println("after:" + Arrays.toString(arr));
 	}
 
+	/**
+	 * Parse input.
+	 * 
+	 * @param args
+	 *            string array
+	 * @return int array
+	 */
 	public int[] sanitize(String[] args) {
 		int[] arr = new int[args.length];
 		for (int x = 0; x < args.length; x++) {
@@ -21,6 +34,12 @@ public class Quicksort {
 		return arr;
 	}
 
+	/**
+	 * Main sort method.
+	 * 
+	 * @param arr
+	 *            int array to sort
+	 */
 	public void sort(int[] arr) {
 		sort(arr, 0, arr.length - 1);
 	}
