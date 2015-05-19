@@ -1,4 +1,4 @@
-package src.list.linked;
+package list.linked;
 
 import java.util.AbstractList;
 

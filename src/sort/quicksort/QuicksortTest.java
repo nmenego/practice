@@ -1,4 +1,4 @@
-package src.sort.quicksort;
+package sort.quicksort;
 
 import org.junit.Test;
 
